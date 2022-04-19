@@ -1,0 +1,17 @@
+{
+    "name": "max-ndj/php-sample",
+    "authors": [
+        {
+            "name": "max-ndj",
+            "email": "joestanleyroadkill@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
