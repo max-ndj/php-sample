@@ -6,7 +6,7 @@
     define("ROOT_DIR", dirname(dirname(__DIR__)));
     require_once ROOT_DIR.'/vendor/autoload.php';
 
-    $dotenv = $dotenv = Dotenv\Dotenv::createImmutable(ROOT_DIR);
+    $dotenv = Dotenv\Dotenv::createImmutable(ROOT_DIR);
     $dotenv->load();
     $config = [
         'db' => [
