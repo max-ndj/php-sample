@@ -6,7 +6,7 @@
     </head>
     <body>
         <div>
-            <h1> This is the homepage ! </h1>
+            <h1> Welcome ! </h1>
         </div>
     </body>
 </html>

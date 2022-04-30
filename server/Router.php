@@ -42,11 +42,10 @@
         {
             foreach ($params as $key => $value)
                 $$key = $value;
-
             ob_start();
             include_once App::$ROOT_DIR."/client/views/$view.php";
 
-            return ob_end_clean();
+            return ob_get_clean();
         }
     }
 ?>
