@@ -18,6 +18,11 @@
             $this->routes['get'][$path] = $callback;
         }
 
+        public function post($path, $callback): void
+        {
+            $this->routes['post'][$path] = $callback;
+        }
+
         public function resolve()
         {
             $path = $this->request->path();
@@ -27,7 +32,7 @@
             if (!$callback) {
                 $this->response->setStatusCode(404);
 
-                return "Not found";
+                return $this->renderView('404');
             } else if (is_string($callback))
                 return $this->renderView($callback); 
             else if (is_array($callback)) {

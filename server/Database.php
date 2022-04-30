@@ -17,5 +17,10 @@
                 [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]
             );
         }
+
+        public function prepare($sql): \PDOStatement
+        {
+            return $this->pdo->prepare($sql);
+        }
     }
 ?>

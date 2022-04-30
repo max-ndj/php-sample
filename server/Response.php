@@ -10,7 +10,7 @@
 
         public function redirect($url): void
         {
-            header("Location: " .$url);
+            header("Location: $url");
         }
     }
 ?>
